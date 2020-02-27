@@ -16,7 +16,7 @@ public class Main {
         System.out.println("MENU : ");
         System.out.println("1.Bangun Datar");
         System.out.println("2.Bangun Ruang");
-        System.out.println("Pilih menu : ");
+        System.out.print("Pilih menu : ");
         pilih=tampung.nextInt();
         
         switch(pilih){
@@ -28,13 +28,12 @@ public class Main {
                 System.out.println("1. Persegi");
                 System.out.println("2. Persegi Panjang");
                 System.out.println("3. Segitiga");
-                System.out.println("Pilih menu : ");
+                System.out.print("Pilih menu : ");
                 menu1=tampung.nextInt();
                 
                 switch(menu1){
                     case 1:{
                         System.out.println("====HITUNG LUAS DAN KELILING PERSEGI======");
-                        System.out.println("===========PERSEGI============");
                         System.out.print("Panjang Sisi = ");
                         sisi=tampung.nextDouble();
         
@@ -44,7 +43,6 @@ public class Main {
                     }break;
                     case 2:{
                         System.out.println("====HITUNG LUAS DAN KELILING PERSEGI PANJANG=====");
-                        System.out.println("========PERSEGI PANJANG=========");
                         System.out.print("Panjang = ");
                         panjang=tampung.nextDouble();
                         System.out.print("Lebar = ");
@@ -75,7 +73,7 @@ public class Main {
                         
                 }
                 
-                    System.out.println("Pilih Bangun Datar lagi? (y/n) = ");
+                    System.out.print("Pilih Bangun Datar lagi? (y/n) = ");
                     lagi=tampung.next().charAt(0);
                 }while(lagi=='y'||lagi=='Y');
                 
@@ -93,7 +91,7 @@ public class Main {
                     System.out.println("4. Limar Persegi Panjang");
                     System.out.println("5. Prisma Segitiga");
                     System.out.println("6. Limas Segitiga");
-                    System.out.println("Pilih menu = ");
+                    System.out.print("Pilih menu = ");
                     menu3=tampung.nextInt();
                     
                     switch(menu3){
@@ -132,7 +130,7 @@ public class Main {
                     }
                             
                    
-                   System.out.println("Kembali ke menu Bangun Ruang (y/n) = ");
+                   System.out.print("Kembali ke meniu Bangun Ruang (y/n) = ");
                    menu2=tampung.next().charAt(0);
                }while(menu2=='y'||menu2=='Y');
             }break;
@@ -140,7 +138,7 @@ public class Main {
                 exit();
         }
       
-         System.out.println("Kembali ke meniu Utama?(y/n) : ");
+         System.out.print("Kembali ke meniu Utama?(y/n) : ");
          kembali=tampung.next().charAt(0);
         }while(kembali=='y' || kembali=='Y');
     
